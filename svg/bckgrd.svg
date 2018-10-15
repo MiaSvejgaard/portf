@@ -1,0 +1,19 @@
+<svg id="layer_1" data-name="layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1919.57487 1070">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="959.78744" y1="1070" x2="959.78744" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.2"/>
+      <stop offset="0.03142" stop-color="#dddde0" stop-opacity="0.29594"/>
+      <stop offset="0.16593" stop-color="#636372" stop-opacity="0.6393"/>
+      <stop offset="0.28983" stop-color="#1a1a2f" stop-opacity="0.8478"/>
+      <stop offset="0.39231" stop-color="#000018" stop-opacity="0.92"/>
+      <stop offset="1" stop-color="#000018"/>
+    </linearGradient>
+  </defs>
+  <title>bckgrd</title>
+  <rect id="group" class="cls-1" width="1919.57487" height="1070"/>
+</svg>

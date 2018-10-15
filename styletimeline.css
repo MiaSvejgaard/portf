@@ -1,0 +1,132 @@
+.timeline ol, .timelineWork ol {
+  width: 80vw;
+    padding: 10vw 0;
+    transition: all 1s;
+}
+
+#skills ol {
+  width: 80vw;
+    padding: 0vw 0;
+    transition: all 1s;
+}
+.timeline ol li {
+  position: relative;
+  display: inline-block;
+  list-style-type: none;
+  width: 12.25vw;
+  height: 2.4vw;
+  text-align: center;
+}
+
+.timelineWork ol li {
+  position: relative;
+  display: inline-block;
+  list-style-type: none;
+  width: 10.25vw;
+  height: 2.4vw;
+  text-align: center;
+}
+
+.info {
+    top: -11vw;
+    position: absolute;    
+    z-index: 2;  
+    font-size: 0.8vw;
+    line-height: 1vw;
+}
+
+.blue1 {background-color: #001833;}
+.blue2 {background-color: #00264F;} 
+.blue3 {background-color: #223F6D;}
+.blue4 {background-color: #61789E;}
+.blue5 {background-color: #284E93;}
+
+.timeline ol li:after, .timelineWork ol li:after {
+    content: "";
+    position: absolute;
+    top: 1.3vw;
+    left: 5.7vw;
+    width: 0.7vw;
+    height: 0.7vw;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    background-color: #ffffff;
+}
+.timelineWork ol li:after {
+  left: 4.9vw;
+  width: 0.5vw;
+  height: 0.5vw;
+}
+.timeline ol li div {
+  width: 12vw;
+  padding: 4vw 0 0 0;
+  white-space: normal;
+  color: #fff;    
+}
+
+.timelineWork ol li div {
+  width: 10vw;
+  padding: 4vw 0 0 0;
+  white-space: normal;
+  color: #fff;    
+}
+
+.img1 {
+    width: 7vw;
+    padding: 7vw 0 0 0;
+}
+
+.img2 {    
+    padding: 0 0 6vw 0;
+    width: 7vw;
+}
+
+.timeline time {
+  display: block;    
+  font-size: 1.5vw;
+  margin-bottom: 1vw;
+}
+.timelineWork time {
+  display: block;    
+  font-size: 1vw;
+  margin-bottom: 1vw;
+}
+/* GENERAL MEDIA QUERIES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@media screen and (max-width: 599px) {
+  .timeline ol,
+  .timeline ol li {
+    width: auto;
+  }
+
+  .timeline ol {
+    padding: 0;
+    transform: none !important;
+  }
+
+  .timeline ol li {
+    display: block;
+    height: auto;
+    background: transparent;
+  }
+
+  .timeline ol li:first-child {
+    margin-top: 25px;
+  }
+
+  .timeline ol li:not(:first-child) {
+    margin-left: auto;
+  }
+
+  .timeline ol li div {
+    width: 94%;
+    height: auto !important;
+    margin: 0 auto 25px;
+  }
+
+  .timeline ol li div {
+    position: static;
+  }
+
+  .timeline ol li:nth-child(odd) div {
+    transform: none; }

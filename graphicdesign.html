@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cssline.css">
+    <link rel="stylesheet" href="gallery.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="smallHeader">
+        <div class="indexlink"><a href="index.html">MIA MUNCH SVEJGAARD<h1>PORTFOLIO</h1></a>
+        </div>
+        <div class="navSmall">
+            <div class="nav-contentSmall">
+                <a href="cv.html">
+                    <h1>CV</h1>
+                </a>
+                <a class="hiddena" href="cv.html#aboutMia">About Mia</a>
+
+                <a class="hiddena" href="cv.html#education">Education</a>
+
+                <a class="hiddena" href="cv.html#workExp">Work experience</a>
+
+                <a class="hiddena" href="cv.html#skills">Skill level</a>
+            </div>
+
+            <div class="nav-contentSmall">
+                <a class="hiddena" href="portfolio.html">
+                    <h1>PORTFOLIO</h1>
+                </a>
+                <a class="hiddena" href="graphicdesign.html">Graphic/UI Design</a>
+                <a class="hiddena" href="#">Web Development</a>
+                <a class="hiddena" href="#">Photography</a>
+            </div>
+        </div>
+        <div class="headline">GRAPHIC AND UI DESIGN</div>
+
+    </header>
+    <div id="wrapper">
+
+        <section id="content">
+            <h1>LOGO DESIGNS</h1>
+            <div class="row">
+                <div class="column">
+                    <img src="img-01.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+                </div>
+                <div class="column">
+                    <img src="img-02.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+                </div>
+                <div class="column">
+                    <img src="img-03.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+                </div>
+                <div class="column">
+                    <img src="img-04.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+                </div>
+                <div class="column">
+                    <img src="img-05.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+                </div>
+                <div class="column">
+                    <img src="img-06.jpg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+                </div>
+                <div class="column">
+                    <img src="img-07.jpg" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+                </div>
+                <div class="column">
+                    <img src="img-08.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+                </div>
+                <div class="column">
+                    <img src="img-09.jpg" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
+                </div>
+                <div class="column">
+                    <img src="img-10.jpg" style="width:100%" onclick="openModal();currentSlide(10)" class="hover-shadow cursor">
+                </div>
+            </div>
+
+            <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+
+                    <div class="mySlides">
+                        <div class="numbertext">1 / 10</div>
+                        <img src="img-01.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">2 / 10</div>
+                        <img src="img-02.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">3 / 10</div>
+                        <img src="img-03.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">4 / 10</div>
+                        <img src="img-04.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides">
+                        <div class="numbertext">5 / 10</div>
+                        <img src="img-05.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides">
+                        <div class="numbertext">6 / 10</div>
+                        <img src="img-06.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides">
+                        <div class="numbertext">7 / 10</div>
+                        <img src="img-07.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides">
+                        <div class="numbertext">8 / 10</div>
+                        <img src="img-08.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides">
+                        <div class="numbertext">9 / 10</div>
+                        <img src="img-09.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides">
+                        <div class="numbertext">10 / 10</div>
+                        <img src="img-10.jpg" style="width:100%">
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                    <div class="caption-container">
+                        <p id="caption"></p>
+                    </div>
+
+                    <div class="columnSmall">
+                        <div class="columnS">
+                            <img class="demo cursor" src="img-01.jpg" style="width:100%" onclick="currentSlide(1)" alt="2014, Icelandic horse logo">
+                        </div>
+                        <div class="columnS">
+                            <img class="demo cursor" src="img-02.jpg" style="width:100%" onclick="currentSlide(2)" alt="2013, Logo for American Quarter Horse breeding stud, Storming Retaliation">
+                        </div>
+                        <div class="columnS">
+                            <img class="demo cursor" src="img-03.jpg" style="width:100%" onclick="currentSlide(3)" alt="2014, Logo for customer GO HORSES">
+                        </div>
+                        <div class="columnS">
+                            <img class="demo cursor" src="img-04.jpg" style="width:100%" onclick="currentSlide(4)" alt="2014, Logo for customer GO HORSES">
+                        </div>
+                        <div class="columnS">
+                            <img class="demo cursor" src="img-05.jpg" style="width:100%" onclick="currentSlide(5)" alt="2012, Logo for customer Rastox Arabians">
+                        </div>
+                        <div class="columnS">
+                            <img class="demo cursor" src="img-06.jpg" style="width:100%" onclick="currentSlide(6)" alt="2014, Logo for customer Stald Blue Jeans">
+                        </div>
+                        <div class="columnS">
+                            <img class="demo cursor" src="img-07.jpg" style="width:100%" onclick="currentSlide(7)" alt="2013, Reining logo">
+                        </div>
+                        <div class="columnS">
+                            <img class="demo cursor" src="img-08.jpg" style="width:100%" onclick="currentSlide(8)" alt="2013, Logo for customer Bak Arabians">
+                        </div>
+                        <div class="columnS">
+                            <img class="demo cursor" src="img-09.jpg" style="width:100%" onclick="currentSlide(9)" alt="2012, Logo for customer Kennel Kokos">
+                        </div>
+                        <div class="columnS">
+                            <img class="demo cursor" src="img-10.jpg" style="width:100%" onclick="currentSlide(10)" alt="2015, Logo horse">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                function openModal() {
+                    document.getElementById('myModal').style.display = "block";
+                }
+
+                function closeModal() {
+                    document.getElementById('myModal').style.display = "none";
+                }
+
+                var slideIndex = 1;
+                showSlides(slideIndex);
+
+                function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                }
+
+                function currentSlide(n) {
+                    showSlides(slideIndex = n);
+                }
+
+                function showSlides(n) {
+                    var i;
+                    var slides = document.getElementsByClassName("mySlides");
+                    var dots = document.getElementsByClassName("demo");
+                    var captionText = document.getElementById("caption");
+                    if (n > slides.length) { slideIndex = 1 }
+                    if (n < 1) { slideIndex = slides.length }
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex - 1].style.display = "block";
+                    dots[slideIndex - 1].className += " active";
+                    captionText.innerHTML = dots[slideIndex - 1].alt;
+                }
+            </script>
+
+
+        </section>
+    </div>
+    <footer></footer>
+    <script src="index.js"></script>
+</body>
+
+</html>

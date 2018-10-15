@@ -1,0 +1,116 @@
+.content-block {
+  padding: 4vw 0 4vw 0;
+}
+.content-block__item {
+  position: relative;
+  width: 19vw;
+  margin: 0.5vw;
+  display: inline-block;
+}
+
+.content-block__item .content {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+/* ===== content block END ===== */
+
+/* ===== border ===== */
+.brdr-block {
+  display: block;
+  position: absolute;
+  top: 2vw;
+  left: 2vw;
+  right: 2vw;
+  bottom: 2vw;
+  z-index: 2;
+}
+
+.brdr-line {
+  position: absolute;
+  display: block;
+  background-color: #fff;
+  opacity: 0;
+
+  transition-property: width, height;
+
+  transition-duration: 0s;
+
+  transition-delay: 0s;
+
+  transition-timing-function: ease-in-out;
+}
+
+.brdr-line-1 {
+  top: 0px;
+  left: 0px;
+}
+
+.brdr-line-2 {
+  top: 0px;
+  right: 0px;
+}
+
+.brdr-line-3 {
+  bottom: 0px;
+  right: 0px;
+}
+
+.brdr-line-4 {
+  left: 0px;
+  bottom: 0px;
+}
+
+.brdr-line-1,
+.brdr-line-3 {
+  height: 1px;
+  width: 0;
+}
+
+.brdr-line-2,
+.brdr-line-4 {
+  height: 0;
+  width: 1px;
+}
+
+.content-block__item:hover .brdr-line,
+.content-block__item:focus .brdr-line {
+  opacity: 1;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+}
+
+.content-block__item:hover .brdr-line-1,
+.content-block__item:focus .brdr-line-1 {
+  transition-delay: 0s;
+}
+
+.content-block__item:hover .brdr-line-2,
+.content-block__item:focus .brdr-line-2 {
+  transition-delay: 0.2s;
+}
+
+.content-block__item:hover .brdr-line-3,
+.content-block__item:focus .brdr-line-3 {
+  transition-delay: 0.4s;
+}
+
+.content-block__item:hover .brdr-line-4,
+.content-block__item:focus .brdr-line-4 {
+  transition-delay: 0.6s;
+}
+
+.content-block__item:hover .brdr-line-1,
+.content-block__item:focus .brdr-line-1,
+.content-block__item:hover .brdr-line-3,
+.content-block__item:focus .brdr-line-3 {
+  width: 100%;
+}
+
+.content-block__item:hover .brdr-line-2,
+.content-block__item:focus .brdr-line-2,
+.content-block__item:hover .brdr-line-4,
+.content-block__item:focus .brdr-line-4 {
+  height: 100%;
+}
