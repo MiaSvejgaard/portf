@@ -1,0 +1,84 @@
+.mobile-container {
+  padding-left: 39vw;
+  width: 23vw;
+  font-size: 2vw;
+  left: 32vw;
+  top: 1vw;
+  position: absolute;
+  text-align: center;
+  color: white;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #000018;
+  position: relative;
+  padding: 4vw 0 0 0;
+  border-radius: 1vw;
+}
+
+.topnav #myLinks {
+  display: none;
+  font-family: "century gothic";
+}
+
+.topnav a {
+  color: white;
+  padding: 1vw 2vw;
+  text-decoration: none;
+  font-size: 4vw;
+  text-align: center;
+  display: block;
+}
+
+.topnav a.icon {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  color: #fff;
+}
+
+.active4 {
+  color: white;
+}
+@media only screen and (max-width: 500px) {
+  .mobile-container {
+    /* padding-left: 39vw; */
+    width: 7vw;
+    line-height: 1vw;
+    /* height: 2vh; */
+    font-size: 2vw;
+    left: 53vw;
+    top: 1vw;
+    position: fixed;
+    text-align: center;
+    z-index: 3;
+    color: white;
+  }
+  #myLinks {
+    width: 42vw;
+    font-size: 2vw;
+    left: 60vw;
+    z-index: 0;
+    line-height: 16vw;
+    top: 0vw;
+    position: fixed;
+    text-align: center;
+    color: white;
+    background-color: #000018;
+  }
+
+  .active4 {
+    color: white;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  .mobile-container {
+    display: none;
+  }
+}

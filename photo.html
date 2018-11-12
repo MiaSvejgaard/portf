@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cssline.css">
+    <link rel="stylesheet" href="gallery.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+
+    <link rel="stylesheet" href="styletimeline.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styleburger.css">
+    <link rel="icon" type="image/png" href="img/favicon-16x16.png">
+    <title>PORTFOLIO FOR MIA MUNCH SVEJGAARD</title>
+</head>
+
+
+<body><a name="top"></a>
+    <header class="smallHeader">
+        <div class="indexlink"><a href="index.html">MIA MUNCH SVEJGAARD<h1>PORTFOLIO</h1></a>
+        </div>
+        <div class="navSmall">
+            <div class="nav-contentSmall">
+                <a class="h1Hover" href="cv.html">
+                    CV & Personal
+                </a>
+                <a class="hiddena" href="cv.html#aboutMia">About Mia</a>
+
+                <a class="hiddena" href="cv.html#education">Education</a>
+
+                <a class="hiddena" href="cv.html#workExp">Work experience</a>
+
+                <a class="hiddena" href="cv.html#skills">Skill level</a>
+            </div>
+            <div class="nav-contentSmall">
+                <a class="h1Hover" href="portfolio.html">
+                    PORTFOLIO
+                </a>
+                <a class="hiddena" href="graphicdesign.html">Graphic Design</a>
+                <a class="hiddena" href="webdev.html">Web Development</a>
+                <a class="hiddena" href="videoani.html">Video & Animation</a>
+                <a class="hiddena" href="photo.html">Photography</a>
+            </div>
+        </div>
+        <div class="headline">PHOTOGRAPHY</div>
+    </header>
+    <div id="wrapper">
+        <div id="burgerMenu"></div>
+
+        <!-- End smartphone / tablet look -->
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myLinks");
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                } else {
+                    x.style.display = "block";
+                }
+            }
+        </script>
+        <section id="contentPhoto">
+            <a href="#top">
+                <div class="arrowUp"><img src="svg/arrowUp-01.svg"></div>
+            </a>
+            <div class="logoContent">
+                <h1>PREGNANCY AND BABTISM PHOTOGRAPHY</h1>
+                <div class="photoRow">
+                    <div id="placeHolder">
+                        <img class="webPhoto" src="img/photobby-01.jpg" alt="babtism, girl and boy">
+                        <img class="webPhoto" src="img/photobby-02.jpg" alt="pregnancy photoshoot">
+                    </div>
+                    <div id="placeHolder">
+                        <img class="webPhoto" id="place" src="img/photobby-03.jpg" alt="baby photoshoot">
+                        <img class="webPhoto" id="place" src="img/photobby-04.jpg" alt="pregnancy photoshoot">
+                    </div>
+                    <div id="placeHolder">
+                        <img class="webPhoto" src="img/photobby-05.jpg" alt="pregnancy photoshoot">
+                        <img class="webPhoto" src="img/photobby-06.jpg" alt="babtism, boy">
+                    </div>
+                    <hr class="photoHr">
+                </div>
+
+                <h1>NATURE, ANIMALS AND WEDDING PHOTOGRAPHY</h1>
+                <div class="photoRow">
+                    <div id="placeHolder">
+                        <img class="webPhoto" src="img/photoland-01.jpg" alt="Quarter horse stallion, eye">
+                        <img class="webPhoto" src="img/photoland-02.jpg" alt="Arena at Alhambra, spain">
+                        <img class="webPhoto" src="img/photoland-03.jpg" alt="Mountains Austria">
+                    </div>
+                    <div id="placeHolder">
+                        <img class="webPhoto" id="place" src="img/photoland-04.jpg" alt="fortress spain">
+                        <img class="webPhoto" id="place" src="img/photoland-05.jpg" alt="Wedding, bride and groom">
+                    </div>
+                    <div id="placeHolder">
+                        <img class="webPhoto" src="img/photoland-06.jpg" alt="Alhambra Spain">
+                        <img class="webPhoto" src="img/photoland-07.jpg" alt="Fjord Stallion">
+                        <img class="webPhoto" src="img/photoland-08.jpg" alt="Alhambra Spain">
+                    </div>
+
+                    <div id="myModal" class="modal">
+                        <span class="close">&times;</span>
+                        <img class="modal-content" id="img01">
+                        <div id="caption"></div>
+                    </div>
+                    <script>
+                        // create references to the modal...
+                        var modal = document.getElementById('myModal');
+                        // to all images -- note I'm using a class!
+                        var images = document.getElementsByClassName('webPhoto');
+                        // the image in the modal
+                        var modalImg = document.getElementById("img01");
+                        // and the caption in the modal
+                        var captionText = document.getElementById("caption");
+
+                        // Go through all of the images with our custom class
+                        for (var i = 0; i < images.length; i++) {
+                            var img = images[i];
+                            // and attach our click listener for this image.
+                            img.onclick = function (evt) {
+                                modal.style.display = "block";
+                                modalImg.src = this.src;
+                                captionText.innerHTML = this.alt;
+                            }
+                        }
+
+                        var span = document.getElementsByClassName("close")[0];
+
+                        span.onclick = function () {
+                            modal.style.display = "none";
+                        }
+
+                    </script>
+        </section>
+    </div>
+    <footer></footer>
+    <script src="index.js"></script>
+</body>
+
+</html>

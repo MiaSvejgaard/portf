@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styletimeline.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styleburger.css">
+    <link rel="icon" type="image/png" href="img/favicon-16x16.png">
+    <title>PORTFOLIO FOR MIA MUNCH SVEJGAARD</title>
+</head>
+
+<body><a name="top"></a>
+    <header class="smallHeader">
+        <div class="indexlink"><a href="index.html">MIA MUNCH SVEJGAARD<h1>PORTFOLIO</h1></a>
+        </div>
+        <div class="navSmall">
+            <div class="nav-contentSmall">
+                <a class="h1Hover" href="cv.html">
+                    CV & Personal
+                </a>
+                <a class="hiddena" href="cv.html#aboutMia">About Mia</a>
+
+                <a class="hiddena" href="cv.html#education">Education</a>
+
+                <a class="hiddena" href="cv.html#workExp">Work experience</a>
+
+                <a class="hiddena" href="cv.html#skills">Skill level</a>
+            </div>
+
+            <div class="nav-contentSmall">
+                <a class="h1Hover" href="portfolio.html">
+                    PORTFOLIO
+                </a>
+                <a class="hiddena" href="graphicdesign.html">Graphic Design</a>
+                <a class="hiddena" href="webdev.html">Web Development</a>
+                <a class="hiddena" href="videoani.html">Video & Animation</a>
+                <a class="hiddena" href="photo.html">Photography</a>
+            </div>
+        </div>
+        <div class="headline">WEB DEVELOPMENT</div>
+
+    </header>
+    <div id="wrapper">
+        <div id="burgerMenu"></div>
+
+        <!-- End smartphone / tablet look -->
+    </div>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+    <section id="contentCv">
+        <a href="#top">
+            <div class="arrowUp"><img src="svg/arrowUp-01.svg"></div>
+        </a>
+        <div id="aboutMia">
+            <h1>WEB DEVELOPMENT</h1><br>
+            <div class="videoContent">
+                <h2>FOOD8 PROJECT</h2>
+                <p>FOOD8 was a project, where we as a group was faced with the challenge of optimizing the website
+                    for a virtuel foodcourt. The finished result is a mobile-only version. The idea was to create a
+                    website for the foodie "on the go", easy to book and with a broad selection of great
+                    restuarants.
+                    Here the design for the web version is displayed, due to sizing on the portfolio site.<br>
+                    <a class="linkToSite" href="http://designstorm.dk/food8/index.html">Link to the mobile-only
+                        optimized version.</a>
+                </p><br>
+
+                <p>I was in charge of:</p>
+                <ul>
+                    <li>Wireframes</li>
+                    <li>Mockup</li>
+                    <li>Design</li>
+                    <li>CSS</li>
+
+                </ul><br>
+                <p>I was invovled in:</p>
+                <ul>
+
+                    <li>HTML, CSS and JS</li>
+                </ul>
+
+            </div>
+            <div class="webContent">
+                <img class="webImg" id="myImg" src="img/food8_deli_1-02.jpg" alt="food8 project">
+                <img class="webImg" id="myImg" src="img/food8-04.jpg" alt="food8 project">
+
+
+            </div>
+            <hr class="webHr">
+
+            <div class="videoContent">
+                <h2>HANNE BERTELSEN PROJECT</h2>
+                <p>Exam project for second semester. In this project we were asked redesign and create a new
+                    website and video for a designer. I chose to make a redesign
+                    for my own examination, because I found that some fundamental mistakes was made with the
+                    group design. Here is shown the finished group
+                    solution and my own solution. <a class="linkToSite" href="http://designstorm.dk/kea/2-semester-eksamen/hanne_bertelsen/index.html">Link
+                        to group exam project.</a> </p><br>
+                <p>I was in charge of:</p>
+                <ul>
+                    <li>Video Editing, Cutting, Storyboard and Planning of video production</li>
+                    <li>Icons, infographic design and idea</li>
+                </ul><br>
+                <p>I was invovled in:</p>
+                <ul>
+                    <li>Wordpress, REST API, HTML, CSS and JS</li>
+                    <li>Logo and design</li>
+                </ul>
+            </div>
+            <div class="webContent">
+
+                <img class="webImg" id="myImg" title="Group solution" src="img/hb-01.jpg" alt="Hanne Bertelsen project">
+
+                <img class="webImg" id="myImg" title="My solution" src="img/mockupnyt-01.jpg" alt="New Mockup to Hanne Bertelsen project">
+            </div>
+            <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img01">
+                <div id="caption"></div>
+            </div>
+            <script>
+                // create references to the modal...
+                var modal = document.getElementById('myModal');
+                // to all images -- note I'm using a class!
+                var images = document.getElementsByClassName('webImg');
+                // the image in the modal
+                var modalImg = document.getElementById("img01");
+                // and the caption in the modal
+                var captionText = document.getElementById("caption");
+
+                // Go through all of the images with our custom class
+                for (var i = 0; i < images.length; i++) {
+                    var img = images[i];
+                    // and attach our click listener for this image.
+                    img.onclick = function (evt) {
+                        modal.style.display = "block";
+                        modalImg.src = this.src;
+                        captionText.innerHTML = this.alt;
+                    }
+                }
+
+                var span = document.getElementsByClassName("close")[0];
+
+                span.onclick = function () {
+                    modal.style.display = "none";
+                }
+
+            </script>
+    </section>
+    </div>
+    <footer></footer>
+    <script src="index.js"></script>
+</body>
+
+</html>

@@ -7,18 +7,23 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="cssline.css">
+    <link rel="stylesheet" href="styletimeline.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
-    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styleburger.css">
+    <link rel="icon" type="image/png" href="img/favicon-16x16.png">
+    <title>PORTFOLIO FOR MIA MUNCH SVEJGAARD</title>
 </head>
 
-<body>
+<body><a name="top"></a>
     <header class="smallHeader">
         <div class="indexlink"><a href="index.html">MIA MUNCH SVEJGAARD<h1>PORTFOLIO</h1></a>
         </div>
         <div class="navSmall">
             <div class="nav-contentSmall">
-                <a href="cv.html">
-                    <h1>CV</h1>
+                <a class="h1Hover" href="cv.html">
+                    CV & Personal
                 </a>
                 <a class="hiddena" href="cv.html#aboutMia">About Mia</a>
 
@@ -30,20 +35,37 @@
             </div>
 
             <div class="nav-contentSmall">
-                <a class="hiddena" href="portfolio.html">
-                    <h1>PORTFOLIO</h1>
+                <a class="h1Hover" href="portfolio.html">
+                    PORTFOLIO
                 </a>
-                <a class="hiddena" href="graphicdesign.html">Graphic/UI Design</a>
-                <a class="hiddena" href="#">Web Development</a>
-                <a class="hiddena" href="#">Photography</a>
+                <a class="hiddena" href="graphicdesign.html">Graphic Design</a>
+                <a class="hiddena" href="webdev.html">Web Development</a>
+                <a class="hiddena" href="videoani.html">Video & Animation</a>
+                <a class="hiddena" href="photo.html">Photography</a>
             </div>
         </div>
         <div class="headline">PORTFOLIO FOR MIA MUNCH SVEJGAARD</div>
 
     </header>
     <div id="wrapper">
+        <div id="burgerMenu"></div>
 
-        <section id="content">
+        <!-- End smartphone / tablet look -->
+
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myLinks");
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                } else {
+                    x.style.display = "block";
+                }
+            }
+        </script>
+        <section id="contentPortfolio">
+            <a href="#top">
+                <div class="arrowUp"><img src="svg/arrowUp-01.svg"></div>
+            </a>
             <div class="content-block"><a href="graphicdesign.html">
                     <div class="content-block__item">
                         <div class="brdr-block">
@@ -53,37 +75,45 @@
                             <div class="brdr-line brdr-line-4"></div>
                         </div>
                         <div class="port_head">GRAPHIC DESIGN</div>
-                        <img src="svg/graphicdesign_port-01.svg">
+                        <img src="svg/graphicdesign_port-01.svg" alt="graphic design, dragon">
+                    </div>
+                </a><a href="webdev.html">
+                    <div class="content-block__item">
+                        <div class="brdr-block">
+                            <div class="brdr-line brdr-line-1"></div>
+                            <div class="brdr-line brdr-line-2"></div>
+                            <div class="brdr-line brdr-line-3"></div>
+                            <div class="brdr-line brdr-line-4"></div>
+                        </div>
+                        <div class="port_head">WEB DEVELOPMENT</div>
+                        <img src="svg/webdevelopment_port-01.svg" alt="web development index img">
+
+                    </div>
+                </a><a href="videoani.html">
+                    <div class="content-block__item">
+                        <div class="brdr-block">
+                            <div class="brdr-line brdr-line-1"></div>
+                            <div class="brdr-line brdr-line-2"></div>
+                            <div class="brdr-line brdr-line-3"></div>
+                            <div class="brdr-line brdr-line-4"></div>
+                        </div>
+                        <div class="port_head">VIDEO & ANIMATION</div>
+                        <img src="svg/photo_ani-01-01.svg" alt="animation fox">
                     </div>
                 </a>
-                <div class="content-block__item">
-                    <div class="brdr-block">
-                        <div class="brdr-line brdr-line-1"></div>
-                        <div class="brdr-line brdr-line-2"></div>
-                        <div class="brdr-line brdr-line-3"></div>
-                        <div class="brdr-line brdr-line-4"></div>
+                <a href="photo.html">
+                    <div class="content-block__item">
+                        <div class="brdr-block">
+                            <div class="brdr-line brdr-line-1"></div>
+                            <div class="brdr-line brdr-line-2"></div>
+                            <div class="brdr-line brdr-line-3"></div>
+                            <div class="brdr-line brdr-line-4"></div>
+                        </div>
+                        <div class="port_head">PHOTOGRAPHY</div>
+                        <img src="svg/photo_port-01-01.svg" alt="Photo fortress spain">
                     </div>
-                    <div class="port_head">WEB DEVELOPMENT</div>
-                    <img src="svg/webdevelopment_port-01.svg">
-
-                </div>
-                <div class="content-block__item">
-                    <div class="brdr-block">
-                        <div class="brdr-line brdr-line-1"></div>
-                        <div class="brdr-line brdr-line-2"></div>
-                        <div class="brdr-line brdr-line-3"></div>
-                        <div class="brdr-line brdr-line-4"></div>
-                    </div>
-                    <div class="port_head">PHOTOGRAPHY</div>
-                    <img src="svg/photo_port-01.svg">
-                </div>
-
-
-
-
-
+                </a>
             </div>
-
 
         </section>
     </div>

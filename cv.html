@@ -8,85 +8,109 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="styletimeline.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styleburger.css">
+    <link rel="icon" type="image/png" href="img/favicon-16x16.png">
+    <title>PORTFOLIO FOR MIA MUNCH SVEJGAARD</title>
 </head>
 
-<body>
+<body><a name="top"></a>
     <header class="smallHeader">
         <div class="indexlink"><a href="index.html">MIA MUNCH SVEJGAARD<h1>PORTFOLIO</h1></a>
         </div>
         <div class="navSmall">
             <div class="nav-contentSmall">
-                <a href="cv.html">
-                    <h1>CV</h1>
+                <a class="h1Hover" href="cv.html">
+                    CV & Personal
                 </a>
-                <a class="hiddena" href="#aboutMia">About Mia</a>
+                <a class="hiddena" href="cv.html#aboutMia">About Mia</a>
 
-                <a class="hiddena" href="#education">Education</a>
+                <a class="hiddena" href="cv.html#education">Education</a>
 
-                <a class="hiddena" href="#workExp">Work experience</a>
+                <a class="hiddena" href="cv.html#workExp">Work experience</a>
 
-                <a class="hiddena" href="#skills">Skill level</a>
+                <a class="hiddena" href="cv.html#skills">Skill level</a>
             </div>
 
             <div class="nav-contentSmall">
-                <a class="hiddena" href="portfolio.html">
-                    <h1>PORTFOLIO</h1>
+                <a class="h1Hover" href="portfolio.html">
+                    PORTFOLIO
                 </a>
-                <a class="hiddena" href="#">Graphic/UI Design</a>
-                <a class="hiddena" href="#">Web Development</a>
-                <a class="hiddena" href="#">Photography</a>
+                <a class="hiddena" href="graphicdesign.html">Graphic Design</a>
+                <a class="hiddena" href="webdev.html">Web Development</a>
+                <a class="hiddena" href="videoani.html">Video & Animation</a>
+                <a class="hiddena" href="photo.html">Photography</a>
             </div>
         </div>
         <div class="headline">CV FOR MIA MUNCH SVEJGAARD</div>
 
     </header>
     <div id="wrapper">
+        <div id="burgerMenu"></div>
 
+        <!-- End smartphone / tablet look -->
+
+
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myLinks");
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                } else {
+                    x.style.display = "block";
+                }
+            }
+        </script>
         <section id="contentCv">
+            <a href="#top">
+                <div class="arrowUp"><img src="svg/arrowUp-01.svg"></div>
+            </a>
             <div id="aboutMia">
-
+                <h1>PERSONAL ABOUT MIA</h1><br>
+                <h2 class="aboutH2">Passionate illustrator, photographer and programmer</h2>
+                <br>
                 <div class="left">
-                    <h1>ABOUT MIA</h1>
-                    <p>My name is Mia, and I am a Multimedia Designer student.
+                    <p>My name is Mia, and I am a Multimedia Designer student. I am a creative and committed - soon to
+                        be - 30 year old woman, with great passion for graphic design and web development.
+                    </p><br>
+                    <p>I have had a
+                        passion for drawing since childhood. I have developed my drawing skills within freehand and
+                        digital drawing through more than 20 years, and the past 1,5 years I have earned skills by
+                        working with Adobe Creative Cloud, Animation, Dynamic Prototypes, UI/UX, Content
+                        Management and Frontend Development.
+                    </p><br>
+                    <p>I have 10 years of experience with freelance jobs, where I have developed websites, done
+                        low budget photoshoots and created posters, logos and graphic content for customers.
+                    </p><br>
 
-                        I am a creative and committed - soon to be - 30 year old girl, with great passion for graphic
-                        design and web development. My skills is a mixture of what I have learned at KEA and
-                        self-taught</p>
-
-                    <p>I started with photoshop and illustrator several years ago, and through the Multimedia
-                        education I have gotten even more experience with the Adobe programs, such as InDesign,
-                        Illustrator, Photoshop and Premiere Pro.</p>
-
-                    <p>I have a flair for the creative, and a great interest in constantly improving my skills, both
-                        as a designer and programmer.</p>
-
-                    <p>I am a stabile HTML og CSS coder, and I am constantly evolving as a programmer. At this current
-                        time, I have chosen Frontend Design as my elective to further enhance my skills in JS and SVG.
+                    <p>Personally I am a very outgoing, humoristic, free minded and hardworking woman, who possesses a
+                        lot of life experience and the will to constantly
+                        evolve both as a person and professionally.
                     </p>
-                    <p>Furthermore I have an interest in media production and photography, and I have gained a wide
-                        knowledge of video production through past courses.</p>
+                    <img src="img/imgMe-04.jpg" alt="Mia in Austria, skiing"><img src="img/aboutImgMe-01.jpg" alt="Sketching in Soendermarken">
                 </div>
                 <div class="right">
-                    <p>I have worked with cutting in Premiere Pro,
-                        planning, Adapted Screenplay theory and as a videographer in several school projects, one of
-                        which was nominated for a award at Cinematekets Filmfestival 2017.</p>
 
-                    <p> I have previously been headhunted for freelance jobs through social media, which has given me
-                        experience with graphic projects for clients.</p>
 
-                    <p> Personally I am a very outgoing and free minded girl, who possesses a lot of humor and will to
-                        evolve both as a person and professionally. I work well in teams, as well as independently. I
-                        function both as a “worker bee” and as a managing element on projects. I am very dutiful and a
-                        perfectionist, who takes great pride in delivering a complete product.</p>
+                    <p> I work well in teams, as well as independently. I function both as a worker bee and as a
+                        project manager. I am very dutiful and a perfectionist, with a keen eye for
+                        details, who takes great pride in delivering a complete product.</p>
+                    <p><br>
+                        I am also a giant nerd and gamer. I was born with a computer in my hands and has since a very
+                        young age been fascinated by the fantasy and sci fi universe.</p><br>
 
-                    <p>I am also a giant nerd and gamer. I was born with a computer in my hands and has since a very
-                        young age been fascinated by the fantasy and sci fi universe.
-                        Before I started as a multimedia designer I have worked as a professional trainer, judge, rider
-                        and breeder of horses.</p>
+                    <p>Before I started as a multimedia designer I have worked as a professional trainer, judge and
+                        rider
+                        .</p><br>
+
+                    <p>I hope to find an internship where I can be a part of a team of passionate designers and
+                        programmers, where I can evolve as a graphic designer and programmer, and be a contribution to
+                        the company.</p><br>
+                    <p> I would love to have the possibility to work with both graphic design and web
+                        development.<br> The internship must be on Zealand, in spring of 2019, preferably near Copenhagen.
+                    </p><img src="img/aboutImgMe-02.jpg" alt="World Of Warcraft lan and South Park on tv"><img src="img/imgMe-03.jpg"
+                        alt="Code and sushi evening">
                 </div>
-
-
             </div>
             <div id="education">
                 <h1>EDUCATION</h1><br>
@@ -94,34 +118,57 @@
                     <ol>
                         <li class="blue1">
                             <div class="info">
-                                <time>June 2005</time>
-                                <p>Primary School Graduation</p>
-                                <img class="img1" src="svg/timeline1-01.svg">
+                                <div class="timeLinePlaceT">
+                                    <h1>June 2005</h1>
+                                    <p>Primary School Graduation</p>
+                                </div>
+                                <div class="timeLinePlaceI">
+                                    <img class="img1" src="svg/timeline1-01.svg">
+                                </div>
                             </div>
                         </li>
                         <li class="blue2">
-                            <div class="info"><img class="img2" src="svg/timeline2-01-01.svg">
-                                <time>August 2010 </time>
-                                <p>Basic Course Web Integrator</p>
+                            <div class="info">
+                                <div class="timeLinePlaceI">
+                                    <img class="img2" src="svg/timeline2-01-01.svg">
+                                </div>
+                                <div class="timeLinePlaceT">
+                                    <h1>August 2010</h1>
+                                    <p>Basic Course Web Integrator</p>
+                                </div>
                             </div>
                         </li>
                         <li class="blue3">
                             <div class="info">
-                                <time>June 2017 </time>
-                                <p>STX Graduation</p>
-                                <img class="img1" src="svg/timeline3-01.svg">
+                                <div class="timeLinePlaceT">
+                                    <h1>June 2017</h1>
+                                    <p>STX Graduation</p>
+                                </div>
+                                <div class="timeLinePlaceI">
+                                    <img class="img1" src="svg/timeline3-01.svg"></div>
                             </div>
                         </li>
                         <li class="blue4">
-                            <div class="info"><img class="img2" src="svg/timeline4-01.svg">
-                                <time>August 2017 </time>
-                                <p>Began MMD at KEA</p>
+                            <div class="info">
+                                <div class="timeLinePlaceI">
+                                    <img class="img2" src="svg/timeline4-01.svg">
+                                </div>
+                                <div class="timeLinePlaceT">
+                                    <h1>August 2017</h1>
+                                    <p>Began MMD At KEA</p>
+                                </div>
                             </div>
                         </li>
                         <li class="blue5">
                             <div class="info">
-                                <time>June 2019 </time>
-                                <p>MMD Graduating</p><img class="img1" src="svg/timeline7-05.svg">
+                                <div class="timeLinePlaceT">
+                                    <h1>June 2019</h1>
+
+                                    <p>MMD Graduation</p>
+                                </div>
+                                <div class="timeLinePlaceI">
+                                    <img class="img1" src="svg/timeline7-05.svg">
+                                </div>
                             </div>
                         </li>
                     </ol>
@@ -133,41 +180,58 @@
                     <ol>
                         <li class="blue1">
                             <div class="info">
-                                <time>August 2006 </time>
-                                <p>Lead Stable Manager</p>
-                                <img class="img1" src="svg/timeline5-01-01.svg">
+                                <div class="timeLinePlaceT">
+                                    <h1>August 2006 </h1>
+                                    <p>Lead Stable Manager</p>
+                                </div>
+                                <div class="timeLinePlaceI"><img class="img1" src="svg/timeline5-01-01.svg">
+                                </div>
                             </div>
                         </li>
                         <li class="blue2">
-                            <div class="info"><img class="img2" src="svg/timeline5-02.svg">
-                                <time>November 2007</time>
-                                <p>Handicap support rider</p>
+                            <div class="info">
+                                <div class="timeLinePlaceI"><img class="img2" src="svg/timeline5-02.svg"></div>
+                                <div class="timeLinePlaceT">
+                                    <h1>November 2007</h1>
+                                    <p>Handicap Support Rider</p>
+                                </div>
                             </div>
                         </li>
                         <li class="blue3">
                             <div class="info">
-                                <time>May 2008</time>
-                                <p>Cleaning assistent</p>
-                                <img class="img1" src="svg/timeline5-03.svg">
+                                <div class="timeLinePlaceT">
+                                    <h1>May 2008</h1>
+                                    <p>Cleaning Assistent</p>
+                                </div>
+                                <div class="timeLinePlaceI"> <img class="img1" src="svg/timeline5-03.svg"></div>
                             </div>
                         </li>
                         <li class="blue4">
-                            <div class="info"><img class="img2" src="svg/timeline5-04.svg">
-                                <time>August 2008</time>
-                                <p>Handicap assistent and caretaker</p>
+                            <div class="info">
+                                <div class="timeLinePlaceI"><img class="img2" src="svg/timeline5-04.svg"></div>
+                                <div class="timeLinePlaceT">
+                                    <h1>August 2008</h1>
+                                    <p>Handicap Assistent And Caretaker</p>
+                                </div>
                             </div>
                         </li>
                         <li class="blue5">
                             <div class="info">
-                                <time>February 2010-2015</time>
-                                <p>Professional trainer, rider &
-                                    judge</p><img class="img1" src="svg/timeline5-05.svg">
+                                <div class="timeLinePlaceT">
+                                    <h1>2010-2015</h1>
+                                    <p>Prof. Trainer, rider &
+                                        Judge</p>
+                                </div>
+                                <div class="timeLinePlaceI"><img class="img1" src="svg/timeline5-05.svg"></div>
                             </div>
                         </li>
                         <li class="blue2">
-                            <div class="info"><img class="img2" src="svg/timeline5-06.svg">
-                                <time>2014 - present</time>
-                                <p>Freelance design projects</p>
+                            <div class="info">
+                                <div class="timeLinePlaceI"><img class="img2" src="svg/timeline5-06.svg"></div>
+                                <div class="timeLinePlaceT">
+                                    <h1>2014 - Present</h1>
+                                    <p>Freelance Design Projects</p>
+                                </div>
                             </div>
                         </li>
                     </ol>
@@ -184,6 +248,33 @@
                 <div id="myBar2">0%</div>
                 <div id="myBar3">0%</div>
                 <div id="myBar4">0%</div>
+                <div class="leftSkill">
+
+                    <p>I have been working with the illustrator and photoshop programs for some years, started out
+                        as
+                        personal
+                        interest and has later led me to my current choice of education.</p><br>
+                    <p> I have some experience in
+                        photo editing, advertises and artwork in photoshop. I have experience in graphic artwork
+                        and
+                        illustrations. </p><br>
+
+
+                    <p>I also have some experience in design thinking, process and project management, working with
+                        SCRUM and Trello.</p>
+                </div>
+                <div class="rightSkill">
+                    <p>I started with HTML and CSS at the web integrator course, and the MMD education has given me
+                        alot of opartunities to extend my knowledge and use of HTML and CSS.</p><br>
+                    <p> Im getting very fond
+                        of
+                        grid, css-animations, and is just starting with scss and react.</p><br>
+
+                    <p>I know the basic javascript, and is constantly learning, I have a big interest in being a
+                        great
+                        programmer aswell as designer.</p>
+
+                </div>
         </section>
     </div>
 

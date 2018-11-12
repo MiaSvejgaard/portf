@@ -6,20 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="cssline.css">
+    <link rel="stylesheet" href="styletimeline.css">
     <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="styleburger.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
-    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="getjson.js"></script>
+    <link rel="icon" type="image/png" href="img/favicon-16x16.png">
+    <title>PORTFOLIO FOR MIA MUNCH SVEJGAARD</title>
 </head>
 
-<body>
+<body><a name="top"></a>
     <header class="smallHeader">
         <div class="indexlink"><a href="index.html">MIA MUNCH SVEJGAARD<h1>PORTFOLIO</h1></a>
         </div>
         <div class="navSmall">
             <div class="nav-contentSmall">
-                <a href="cv.html">
-                    <h1>CV</h1>
+                <a class="h1Hover" href="cv.html">
+                    CV & Personal
                 </a>
                 <a class="hiddena" href="cv.html#aboutMia">About Mia</a>
 
@@ -31,184 +36,82 @@
             </div>
 
             <div class="nav-contentSmall">
-                <a class="hiddena" href="portfolio.html">
-                    <h1>PORTFOLIO</h1>
+                <a class="h1Hover" href="portfolio.html">
+                    PORTFOLIO
                 </a>
-                <a class="hiddena" href="graphicdesign.html">Graphic/UI Design</a>
-                <a class="hiddena" href="#">Web Development</a>
-                <a class="hiddena" href="#">Photography</a>
+                <a class="hiddena" href="graphicdesign.html">Graphic Design</a>
+                <a class="hiddena" href="webdev.html">Web Development</a>
+                <a class="hiddena" href="videoani.html">Video & Animation</a>
+                <a class="hiddena" href="photo.html">Photography</a>
             </div>
         </div>
-        <div class="headline">GRAPHIC AND UI DESIGN</div>
+        <div class="headline">GRAPHIC DESIGN & ILLUSTRATIONS</div>
 
     </header>
     <div id="wrapper">
+        <div id="burgerMenu">
+        </div>
+        <!-- End smartphone / tablet look -->
 
-        <section id="content">
-            <h1>LOGO DESIGNS</h1>
-            <div class="row">
-                <div class="column">
-                    <img src="img-01.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
-                </div>
-                <div class="column">
-                    <img src="img-02.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
-                </div>
-                <div class="column">
-                    <img src="img-03.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
-                </div>
-                <div class="column">
-                    <img src="img-04.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
-                </div>
-                <div class="column">
-                    <img src="img-05.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
-                </div>
-                <div class="column">
-                    <img src="img-06.jpg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
-                </div>
-                <div class="column">
-                    <img src="img-07.jpg" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
-                </div>
-                <div class="column">
-                    <img src="img-08.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
-                </div>
-                <div class="column">
-                    <img src="img-09.jpg" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
-                </div>
-                <div class="column">
-                    <img src="img-10.jpg" style="width:100%" onclick="openModal();currentSlide(10)" class="hover-shadow cursor">
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myLinks");
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                } else {
+                    x.style.display = "block";
+                }
+            }
+        </script>
+
+        <section id="contentCv">
+            <a href="#top">
+                <div class="arrowUp"><img src="svg/arrowUp-01.svg"></div>
+            </a>
+            <div class="logoContent">
+                <h1>LOGO DESIGNS</h1>
+                <p class="logoText">Displayed here is a selection of logos I have crated for companies. </p>
+                <div id="columnWrapper" class="row">
                 </div>
             </div>
-
             <div id="myModal" class="modal">
                 <span class="close cursor" onclick="closeModal()">&times;</span>
                 <div class="modal-content">
-
-                    <div class="mySlides">
-                        <div class="numbertext">1 / 10</div>
-                        <img src="img-01.jpg" style="width:100%">
+                    <div class="largeImg">
                     </div>
-
-                    <div class="mySlides">
-                        <div class="numbertext">2 / 10</div>
-                        <img src="img-02.jpg" style="width:100%">
-                    </div>
-
-                    <div class="mySlides">
-                        <div class="numbertext">3 / 10</div>
-                        <img src="img-03.jpg" style="width:100%">
-                    </div>
-
-                    <div class="mySlides">
-                        <div class="numbertext">4 / 10</div>
-                        <img src="img-04.jpg" style="width:100%">
-                    </div>
-                    <div class="mySlides">
-                        <div class="numbertext">5 / 10</div>
-                        <img src="img-05.jpg" style="width:100%">
-                    </div>
-                    <div class="mySlides">
-                        <div class="numbertext">6 / 10</div>
-                        <img src="img-06.jpg" style="width:100%">
-                    </div>
-                    <div class="mySlides">
-                        <div class="numbertext">7 / 10</div>
-                        <img src="img-07.jpg" style="width:100%">
-                    </div>
-                    <div class="mySlides">
-                        <div class="numbertext">8 / 10</div>
-                        <img src="img-08.jpg" style="width:100%">
-                    </div>
-                    <div class="mySlides">
-                        <div class="numbertext">9 / 10</div>
-                        <img src="img-09.jpg" style="width:100%">
-                    </div>
-                    <div class="mySlides">
-                        <div class="numbertext">10 / 10</div>
-                        <img src="img-10.jpg" style="width:100%">
-                    </div>
-
                     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                     <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
                     <div class="caption-container">
                         <p id="caption"></p>
                     </div>
-
                     <div class="columnSmall">
-                        <div class="columnS">
-                            <img class="demo cursor" src="img-01.jpg" style="width:100%" onclick="currentSlide(1)" alt="2014, Icelandic horse logo">
-                        </div>
-                        <div class="columnS">
-                            <img class="demo cursor" src="img-02.jpg" style="width:100%" onclick="currentSlide(2)" alt="2013, Logo for American Quarter Horse breeding stud, Storming Retaliation">
-                        </div>
-                        <div class="columnS">
-                            <img class="demo cursor" src="img-03.jpg" style="width:100%" onclick="currentSlide(3)" alt="2014, Logo for customer GO HORSES">
-                        </div>
-                        <div class="columnS">
-                            <img class="demo cursor" src="img-04.jpg" style="width:100%" onclick="currentSlide(4)" alt="2014, Logo for customer GO HORSES">
-                        </div>
-                        <div class="columnS">
-                            <img class="demo cursor" src="img-05.jpg" style="width:100%" onclick="currentSlide(5)" alt="2012, Logo for customer Rastox Arabians">
-                        </div>
-                        <div class="columnS">
-                            <img class="demo cursor" src="img-06.jpg" style="width:100%" onclick="currentSlide(6)" alt="2014, Logo for customer Stald Blue Jeans">
-                        </div>
-                        <div class="columnS">
-                            <img class="demo cursor" src="img-07.jpg" style="width:100%" onclick="currentSlide(7)" alt="2013, Reining logo">
-                        </div>
-                        <div class="columnS">
-                            <img class="demo cursor" src="img-08.jpg" style="width:100%" onclick="currentSlide(8)" alt="2013, Logo for customer Bak Arabians">
-                        </div>
-                        <div class="columnS">
-                            <img class="demo cursor" src="img-09.jpg" style="width:100%" onclick="currentSlide(9)" alt="2012, Logo for customer Kennel Kokos">
-                        </div>
-                        <div class="columnS">
-                            <img class="demo cursor" src="img-10.jpg" style="width:100%" onclick="currentSlide(10)" alt="2015, Logo horse">
-                        </div>
                     </div>
                 </div>
             </div>
 
-            <script>
-                function openModal() {
-                    document.getElementById('myModal').style.display = "block";
-                }
-
-                function closeModal() {
-                    document.getElementById('myModal').style.display = "none";
-                }
-
-                var slideIndex = 1;
-                showSlides(slideIndex);
-
-                function plusSlides(n) {
-                    showSlides(slideIndex += n);
-                }
-
-                function currentSlide(n) {
-                    showSlides(slideIndex = n);
-                }
-
-                function showSlides(n) {
-                    var i;
-                    var slides = document.getElementsByClassName("mySlides");
-                    var dots = document.getElementsByClassName("demo");
-                    var captionText = document.getElementById("caption");
-                    if (n > slides.length) { slideIndex = 1 }
-                    if (n < 1) { slideIndex = slides.length }
-                    for (i = 0; i < slides.length; i++) {
-                        slides[i].style.display = "none";
-                    }
-                    for (i = 0; i < dots.length; i++) {
-                        dots[i].className = dots[i].className.replace(" active", "");
-                    }
-                    slides[slideIndex - 1].style.display = "block";
-                    dots[slideIndex - 1].className += " active";
-                    captionText.innerHTML = dots[slideIndex - 1].alt;
-                }
-            </script>
-
-
+            <div class="logoContent">
+                <hr class="graph">
+                <h1>GRAPHIC ILLUSTRATIONS, ADDS AND POSTERS</h1>
+                <p class="logoText">Displayed here is a selection illustrations, posters, sketches and photoshop edit.
+                    Some of the pictures shown are personal. Others are freelance projects and gifts. </p>
+                <div id="columnWrapper2" class="row2">
+                </div>
+            </div>
+            <div id="myModal2" class="modal2">
+                <span class="close2 cursor2" onclick="closeModal2()">&times;</span>
+                <div class="modal-content2">
+                    <div class="largeImg2">
+                    </div>
+                    <a class="prev2" onclick="plusSlides2(-1)">&#10094;</a>
+                    <a class="next2" onclick="plusSlides2(1)">&#10095;</a>
+                    <div class="caption-container2">
+                        <p id="caption2"></p>
+                    </div>
+                    <div class="columnSmall2">
+                    </div>
+                </div>
+            </div>
         </section>
     </div>
     <footer></footer>

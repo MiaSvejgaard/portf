@@ -1,0 +1,20 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80.26979 80.26979">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #0c0d19;
+        stroke: #fff;
+        stroke-miterlimit: 10;
+        stroke-width: 0.91563px;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <title>arrowUp</title>
+  <circle class="cls-1" cx="40.1349" cy="40.1349" r="39.67708"/>
+  <path class="cls-2" d="M22.98828,38.72865H57.28151a1.36322,1.36322,0,0,0,.97376-2.31723L41.10865,18.91a1.3632,1.3632,0,0,0-1.94751,0L22.01453,36.41142A1.36321,1.36321,0,0,0,22.98828,38.72865Z"/>
+  <rect class="cls-2" x="29.78073" y="37.04115" width="20.70833" height="25.3125" rx="1.36321"/>
+</svg>

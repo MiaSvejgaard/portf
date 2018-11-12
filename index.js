@@ -6,6 +6,14 @@ async function HentGentagelser() {
   document.querySelector("footer").innerHTML = footer;
 }
 
+document.addEventListener("DOMContentLoaded", HentBurger);
+
+async function HentBurger() {
+  let burgerData = await fetch("burger.html");
+  let burger = await burgerData.text();
+  document.querySelector("#burgerMenu").innerHTML = burger;
+}
+
 const left = document.querySelectorAll("#left path");
 TweenMax.staggerFrom(
   left,
@@ -88,8 +96,7 @@ function move4() {
     } else {
       width++;
       elem4.style.width = width + "%";
-      elem4.innerHTML =
-        "SEO, UX / UI Design, User Testing, Design Thinking & Project Management";
+      elem4.innerHTML = "UX / UI Design, Design Thinking & Project Management";
     }
   }
 }
